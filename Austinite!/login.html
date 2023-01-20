@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Project Phase 3">
+    <meta name="author" content="group14">
+    <link rel="stylesheet" href="homepage.css">
+
+    <style>
+        body {
+            background-color: #FFFFF2;
+            font-family: copperplate;
+        }
+
+        h1 {
+            font-size: 4em;
+            letter-spacing: -1px;
+            background-color: #404040;
+            color: white;
+        }
+
+        p {
+            margin-top: -20px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            padding: 20px;
+            margin: 5px 0 22px 0;
+            display: block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--p-home class for css for all webpage-->
+    <div class="p-home">
+        <!--create a left and right layer for the website-->
+        <div class="p-header-inner">
+            <!--create a header of category-->
+            <header class="p-header">
+                <!--display logo so that automatically back to homepage when click-->
+                <a href="index.html">
+                    <img src="images/logo.png" width="200" height="100">
+                </a>
+            </header>
+
+
+
+            <!--navigation bar-->
+            <div class="navigation-bar">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                    <li><a href="things.html">Things To Do</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li style="float:right"><a class="active" href="login.php">Log In</a></li>
+                    <li style="float:right"><a href="register.php">Register</a></li>
+                </ul>
+            </div>
+
+            <form action="" method="post">
+                <div class="container">
+                    <h1>Sign In</h1>
+                    <p>Please sign in.</p>
+                    <hr>
+
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Username" name="user" size="20" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="pass" size="20" required>
+
+                    <div class="clearfix">
+                        <input id="login" name="login" type="submit" value="Login" />
+                        <input type="reset" value="Clear" />
+                    </div>
+                </div>
+            </form>
+            <a href="register.php">Don't have account? Register here!</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

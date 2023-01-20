@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="homepage.css">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+
+<script>
+  function validateForm() {
+      let first = document.forms["suggestions"]["firstname"].value;
+      let last = document.forms["suggestions"]["lastname"].value;
+      let subject = document.forms["suggestions"]["subject"].value;
+      if (first == "" || last == "" || subect == "") {
+          alert("Please fill out all forms!");
+          return false;
+      }
+  }
+</script>
+
+</head>
+
+<body>
+
+  <!--p-home class for css for all webpage-->
+  <div class="p-home">
+    <!--create a left and right layer for the website-->
+    <div class="p-header-inner">
+      <!--create a header of category-->
+      <header class="p-header">
+        <!--display logo so that automatically back to homepage when click-->
+        <a href="index.html">
+          <img src="images/logo.png" width="200" height="100">
+        </a>
+      </header>
+
+
+
+      <!--navigation bar-->
+      <div class="navigation-bar">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="upcoming_events.html">Upcoming Events</a></li>
+          <li><a href="things.html">Things To Do</a></li>
+          <li><a href="blog.php">Blog</a></li>
+          <li><a class="active" href="suggestions.html">Suggestions</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li style="float:right"><a href="login.php">Log In</a></li>
+          <li style="float:right"><a href="register.php">Register</a></li>
+        </ul>
+      </div>
+
+      <h3>Contact Form</h3>
+
+      <div class="container">
+        <form action="suggestion.php" method="get" name="suggestions" onsubmit="return validateForm()">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="UAE">UAE</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" ></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <!--footer layer-->
+      <div class="p-footer-inner">
+        <!--create a footer-->
+        <footer class="p-footer">
+          <p>Authors: Group 14<br>
+          <p>March 28, 2022</p>
+        </footer>
+      </div>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides1,
+        .mySlides2 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .text {
+            color: #F13C20;
+            font-size: 20px;
+            font-family: Copperplate;
+            padding: 8px 12px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="p-home">
+        <!--create a left and right layer for the website-->
+        <div class="p-header-inner">
+            <!--create a header of category-->
+            <header class="p-header">
+                <!--display logo so that automatically back to homepage when click-->
+                <a href="index.html">
+                    <img src="images/logo.png" width="200" height="100">
+                </a>
+            </header>
+
+
+
+            <!--navigation bar-->
+            <div class="navigation-bar">
+                <ul>
+                    <li><a class="active" href="#home">Homepage</a></li>
+                    <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                    <li><a href="blank.html">Things To Do</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li style="float:right"><a href="#account">Account</a></li>
+                    <li style="float:right"><a href="#notification">Notification</a></li>
+                </ul>
+            </div>
+
+            <h2 style="text-align:center">Upcoming Events</h2>
+
+            <p>This Month:</p>
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <a href="https://www.sxsw.com/">
+                        <img src="images/featured.png" style="width:100%">
+                        <div class="text">SXSW Conference & Festivals</div>
+                    </a>
+                </div>
+
+                <div class="mySlides1">
+                    <a href="https://www.pgatour.com/tournaments/wgc-dell-technologies-match-play.html">
+                        <img src="images/wgc.jpeg" style="width:100%">
+                        <div class="text">WGC-Dell Technologies Match Play</div>
+                    </a>
+                </div>
+
+                <div class="mySlides1">
+                    <a href="https://www.nascaratcota.com/">
+                        <img src="images/nascar.jpeg" style="width:100%">
+                        <div class="text">NASCAR at Circuit of the Americas</div>
+                    </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            <br>
+            <br>
+
+            <p>Next Month:</p>
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <a href="https://www.abckitefest.org/">
+                        <img src="images/kite.jpeg" style="width:100%">
+                        <div class="text">Austin Kite Festival</div>
+                    </a>
+                </div>
+
+                <div class="mySlides2">
+                    <a href="https://www.cap10k.com/">
+                        <img src="images/cap10k.jpeg" style="width:100%">
+                        <div class="text">Statesman Capitol 10K</div>
+                    </a>
+                </div>
+
+                <div class="mySlides2">
+                    <a href="https://oldsettlersmusicfest.org/">
+                        <img src="images/osmf.png" style="width:100%">
+                        <div class="text">Old Settler's Music Festival</div>
+                    </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--footer layer-->
+            <div class="p-footer-inner">
+                <!--create a footer-->
+                <footer class="p-footer">
+                    <p>Authors: Group 14<br>
+                    <p>March 28, 2022</p>
+                </footer>
+            </div>
+
+            <script>
+                let slideIndex = [1, 1];
+                let slideId = ["mySlides1", "mySlides2"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+
+                function plusSlides(n, no) {
+                    showSlides(slideIndex[no] += n, no);
+                }
+
+                function showSlides(n, no) {
+                    let i;
+                    let x = document.getElementsByClassName(slideId[no]);
+                    if (n > x.length) { slideIndex[no] = 1 }
+                    if (n < 1) { slideIndex[no] = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex[no] - 1].style.display = "block";
+                }
+            </script>
+
+</body>
+
+</html>

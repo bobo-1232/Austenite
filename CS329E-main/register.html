@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Project Phase 3"
+    <meta name="author" content="group14">
+    <link rel = "stylesheet" href = "register.css">
+    <script src = "register.js" defer></script>
+</head>
+
+<body>
+    <!--p-home class for css for all webpage-->
+    <div class = "p-home">
+        <!--create a left and right layer for the website-->
+        <div class = "p-header-inner">
+            <!--create a header of category-->
+            <header class = "p-header">
+                <!--display logo so that automatically back to homepage when click-->
+                <a href="index.html">
+                    <img src ="images/logo.png" width="200" height="100">
+                </a>
+            </header>
+
+
+
+        <!--navigation bar-->
+        <div class = "navigation-bar">
+            <ul>
+                <li><a class = "active" href = "#home">Homepage</a></li>
+                <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                <li><a href="blank.html">Things To Do</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="suggestions.html">Sugestions</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li style="float:right"><a href="login.html">Log In</a></li>
+                <li style="float:right"><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+
+        <div class = "register">
+            <h3>Registration</h3>
+            <table>
+                <form method="POST" action = ""> 
+                    <tr>
+                         <td>
+                            <label>Name: </label>
+                         </td>
+
+                         <td>
+                            <input name = "name" type = "text" id = "name" size = "30" placeholder="Enter Your Name" />
+                         </td>
+                    </tr> 
+
+                    <tr>
+                         <td>
+                            <label>Username: </label>
+                         </td>
+
+                         <td>
+                            <input name = "username" type = "text" id = "username" size = "30" placeholder="Choose a username" />
+                         </td>
+                    </tr> 
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class = "explaination">
+                                <p>
+                                The username must be between 6 and 10 chatacters long, inclusive. </br>
+                                The username must contain only letters and digits. </br>
+                                The username cannot begin with a digit.
+                                </p>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                         <td>
+                            <label>Password: </label>
+                         </td>
+
+                         <td>
+                            <input name = "password" type = "text" id = "password" size = "30" placeholder="Choose a password" />
+                         </td>
+                    </tr> 
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class = "explaination">
+                                <p>
+                                    The password and the repeat password must match. </br>
+                                    The password must be between 6 and 10 characters long, inclusive. </br>
+                                    The password must contain only letters and digits.</br>
+                                    The password must have at least one lower case letter, at least one upper case letter, and at least one digit.
+                                </p>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                         <td>
+                            <label>Verify Password: </label>
+                         </td>
+
+                         <td>
+                            <input name = "v-password" type = "text" id = "vpassword" size = "30" placeholder="Verify your password" />
+                         </td>
+                    </tr>
+
+                    <tr>
+                    <td>
+                      <button type="button" onclick="register()">Register</button> 
+                      <input type="reset" value="Clear"><br/> 
+                    </td>
+                </tr>
+                </form>  
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

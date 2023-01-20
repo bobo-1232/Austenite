@@ -1,0 +1,167 @@
+body {
+	margin: 0;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-home {
+	background-clip: border-box;
+	background-color: #FFFFF2;
+}
+
+.p-header-inner {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 6px;
+}
+
+.navigation-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #4056A1;
+}
+
+.navigation-bar li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+.navigation-bar li:last-child {
+	border-right: none;
+}
+
+.navigation-bar li a {
+	display: block;
+	color: #EFE2BA;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation-bar li a:hover:not(.active) {
+	background-color: #F13C20;
+}
+
+.navigation-bar .active {
+	background-color: #04AA6D;
+}
+
+.about {
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.content-header {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.center {
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  width: 50%;
+}
+
+.p-footer {
+		text-align: center;
+		padding: 3px;
+		background-color: #D79922;
+		color: white;
+}
+
+.contact-content{
+	background-color: white;
+	overflow: hidden;
+}
+
+.contact-content table { 
+	padding-left: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.contact-content p {
+	font-size: 20px;
+}
+
+.contact-content a {
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+html {
+	box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+  
+.contactus .column {
+	float: left;
+	width: 25%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+  
+.contactus .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 8px;
+	background-color:#C5CBE3;
+}
+  
+.contactus .about-section {
+	padding: 50px;
+	text-align: center;
+	background-color: #474e5d;
+	color: white;
+}
+  
+.contactus .container {
+	padding: 0 16px;
+}
+  
+.contactus .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+  
+.contactus .phone {
+	color: grey;
+}
+  
+.contactus .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+  
+.contactus .button:hover {
+	background-color: #555;
+}
+  
+@media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+}

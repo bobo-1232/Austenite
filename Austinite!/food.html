@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="homepage.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Formating the buttons and links */
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 0px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /*   Splitting it into three     */
+        .column {
+            float: left;
+            width: 33%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        /* Images  */
+        .imgs {
+            background-color: #aaa;
+            width: 100%;
+            height: 400px;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .cards {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 0px;
+            background-color: #C5CBE3;
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            margin-top: 1%;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<style> 
+    #left {
+        float:left; 
+        background:lightblue;
+        width:25%;
+        height:280px;
+    }
+    #middle{
+        float:left; 
+        background:lightcoral;
+        width:50%;
+        height:280px;
+    }
+    #right{
+        float:right;
+        background:lightblue;
+        width:25%;
+        height:280px;
+    }
+
+</style> 
+
+<body>
+    
+
+    <div class="p-home">
+        <!--create a left and right layer for the website-->
+        <div class="p-header-inner">
+            <!--create a header of category-->
+            <header class="p-header">
+                <!--display logo so that automatically back to homepage when click-->
+                <a href="index.html">
+                    <img src="images/logo.png" width="200" height="100">
+                </a>
+            </header>
+
+
+
+            <!--navigation bar-->
+            <div class="navigation-bar">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                    <li><a class="active" href="things.html">Things To Do</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li style="float:right"><a href="login.php">Login</a></li>
+                    <li style="float:right"><a href="register.php">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="header">
+                <h2>Things To Do </h2>
+            </div>
+
+            <div class="row">
+                <p>Here is a list of restaurants to go</p>
+                <div name = "left">
+                <p>Ramen Tatsu-Ya</p>
+                
+                <img src="images/food1.jpeg" alt="ramen" style="width:400px;height:300px;">
+                <ul>
+                    <li>Various locations<br>
+                        Address One: 1600 E 6th St, Austin, TX 78702 <br>
+                        Address Two: 1234 S Lamar Blvd, Austin, TX 78704 <br>
+                        Address Three: 8557 Research Blvd #126, Austin, TX 78758</li>
+                    <li>Telephone: (512) 893-5561</li> 
+                </ul>
+                </div>
+                <div name = "middle"> 
+                <p>Josephine House</p>
+                <img src="images/food2.jpeg" alt="breakfast" style="width:400px;height:300px;">
+                <ul>
+                    <li>Address: 1601 Waterston Ave, Austin, TX 78703 </li>
+                    <li>Telephone: (512) 477-5584</li> 
+                </ul>
+                </div>
+                <div name = "right">
+                <p>Royer’s Pie Haven</p>
+                <img src="images/food3.jpeg" alt="breakfast" style="width:400px;height:300px;">
+                <ul>
+                    <li>Address: 190 Henkel Circle, Round Top, TX 78954 </li>
+                    <li>Telephone: (979) 249-5282</li> 
+                </ul>
+                </div>
+            </div>
+
+            <!--footer layer-->
+            <div class="p-footer-inner">
+                <!--create a footer-->
+                <footer class="p-footer">
+                    <p>Authors: Group 14<br>
+                    <p>March 28, 2022</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

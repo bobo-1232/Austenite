@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="homepage.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Formating the buttons and links */
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 0px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /*   Splitting it into three     */
+        .column {
+            float: left;
+            width: 33%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        /* Images  */
+        .imgs {
+            background-color: #aaa;
+            width: 100%;
+            height: 400px;
+            padding: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .cards {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 0px;
+            background-color: #C5CBE3;
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            margin-top: 1%;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="p-home">
+        <!--create a left and right layer for the website-->
+        <div class="p-header-inner">
+            <!--create a header of category-->
+            <header class="p-header">
+                <!--display logo so that automatically back to homepage when click-->
+                <a href="index.html">
+                    <img src="images/logo.png" width="200" height="100">
+                </a>
+            </header>
+
+
+
+            <!--navigation bar-->
+            <div class="navigation-bar">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                    <li><a class="active" href="things.html">Things To Do</a></li>
+                    <li><a href="blog.php">Blog</a></li>
+                    <li><a href="suggestions.html">Suggestions</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li style="float:right"><a href="login.php">Login</a></li>
+                    <li style="float:right"><a href="register.php">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="header">
+                <h2>Things To Learn </h2>
+            </div>
+
+            <div class="row">
+                <p>Here is a list of camps and/or classes to take for k-12 students</p>
+                <p>STEM Academy Programs- Python Camp</p>
+                <ul>
+                    <li>Python Camp is open to 
+                        to students who will have graduated from
+                        6th, 7th, or 8th grade by Summer 2022.
+                    </li>
+                    <li>August 1st - August 5th, 2022 from 1:00 p.m. - 5:00 p.m.</li> 
+                    <li>Cost: $315</li>
+                </ul>
+
+                <p>STEM Academy Programs- Research in Life Sciences Camp</p>
+                <ul>
+                    <li>Research in Life Sciences Camp is open to
+                        students who will have graduated from 4th, 5th, or 6th grade by summer 2022.
+                    </li>
+                    <li>June 6th - 10th, 2022 (Mon-Fri). 9:00 a.m. - 4:00 p.m. <br>
+                        August 1st - 5th, 2022 (Mon-Fri). 9:00 a.m. - 4:00 p.m.
+                    </li> 
+                    <li>Cost: $550</li>
+                </ul>
+
+                <p>STEM Academy Programs- Engineering & CS Camp</p>
+                <ul>
+                    <li>Engineering & Computer Science Camp is open to students
+                        who will have graduated from 9th or 10th grade by Summer 2022.
+                    </li>
+                    <li>June 20th - July 28th, 2022.
+                    </li> 
+                    <li>Cost: $2,150</li>
+                </ul>
+            </div>
+
+            <!--footer layer-->
+            <div class="p-footer-inner">
+                <!--create a footer-->
+                <footer class="p-footer">
+                    <p>Authors: Group 14<br>
+                    <p>March 28, 2022</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

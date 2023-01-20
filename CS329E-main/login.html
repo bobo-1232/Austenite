@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Project Phase 3">
+    <meta name="author" content="group14">
+    <link rel = "stylesheet" href = "homepage.css">
+</head>
+
+<body>
+    <!--p-home class for css for all webpage-->
+    <div class = "p-home">
+        <!--create a left and right layer for the website-->
+        <div class = "p-header-inner">
+            <!--create a header of category-->
+            <header class = "p-header">
+                <!--display logo so that automatically back to homepage when click-->
+                <a href="index.html">
+                    <img src ="images/logo.png" width="200" height="100">
+                </a>
+            </header>
+
+
+
+        <!--navigation bar-->
+        <div class = "navigation-bar">
+            <ul>
+                <li><a class = "active" href = "#home">Homepage</a></li>
+                <li><a href="upcoming_events.html">Upcoming Events</a></li>
+                <li><a href="blank.html">Things To Do</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="suggestions.html">Sugestions</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li style="float:right"><a href="login.html">Log In</a></li>
+                <li style="float:right"><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+
+        <div class = "register">
+            <h3>Registration</h3>
+            <table>
+                <form method="POST" action = ""> 
+
+                    <tr>
+                         <td>
+                            <label>Username: </label>
+                         </td>
+
+                         <td>
+                            <input name = "username" type = "text" id = "username" size = "30" placeholder="Enter username" />
+                         </td>
+                    </tr> 
+
+                    
+
+                    <tr>
+                         <td>
+                            <label>Password: </label>
+                         </td>
+
+                         <td>
+                            <input name = "password" type = "text" id = "password" size = "30" placeholder="Enter password" />
+                         </td>
+                    </tr> 
+
+                    <tr>
+                    <td>
+                      <button type="button" onclick="login()">Log In</button> 
+                      <input type="reset" value="Clear"><br/> 
+                    </td>
+                </tr>
+                </form>  
+            </table>
+            <a href="register.html">Don't have account? Register here!</a>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
